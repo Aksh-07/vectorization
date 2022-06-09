@@ -33,7 +33,7 @@ tokenizer = AutoTokenizer.from_pretrained("bert-base-cased")
 
 
 def create_vectors(data):
-    return tokenizer(data["input_ids"])
+    return tokenizer(data)["input_ids"]
 
 
 def decode_vectors(data):
